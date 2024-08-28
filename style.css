@@ -1,0 +1,64 @@
+body {
+    /*Цвет фона*/
+    background-color: lightblue;
+    /* background-image: url("paper.gif"); Картинка в качестве фона
+    background-repeat: repeat-x;  Картинка в фоне повторяется только горизонтально
+    background-repeat: no-repeat; Картинка ф фоне не повторяется 
+    background-position: right top; Расположение картинки в верхнем правом углу
+    background-attachment: fixed; Фиксированное расположение фона, не прокручивается
+    background-attachment: scroll; Фоновая картинка прокручивается вместе со страницей
+
+    body {
+        background-color: #ffffff;
+        background-image: url("img_tree.png");
+        background-repeat: no-repeat;
+        background-position: right top;
+    }  сокращенное свойство, то же самое, что и:
+    body {
+        background: #ffffff url("img_tree.png") no-repeat right top;
+    }
+    */
+    /*Границы*/
+    border: 2px solid powderblue;
+    /*Отступы*/
+    padding: 10px;
+}
+
+h1, h2, p {
+    text-align: center;
+    color: red;
+    background-color: green;
+    /* opacity: 0.3;  Прозрачность фона вместе с текстом*/
+    background: rgba(0, 128, 0, 0.3); /* Прозрачность фона, текст четкий*/
+}
+
+p {
+    font-family: verdana;
+    font-size: 20px;
+}
+
+#para1 {
+    text-align: center;
+    color: red;
+}
+
+p.center {
+    text-align: center;
+    color: red;
+}
+/* Влияет на все элемены на странице
+* {
+    text-align: center;
+    color: blue;
+}*/
+
+/*p {
+    border-top-style: dotted;
+    border-right-style: solid;
+    border-bottom-style: dotted;
+    border-left-style: solid;
+} Ниже тое же эффект*/
+
+p {
+    border-style: dotted solid;
+}
