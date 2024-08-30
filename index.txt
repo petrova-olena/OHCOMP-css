@@ -1,58 +1,90 @@
 <!DOCTYPE html>
 <html lang="fi-FI">
-    <head>
-        <title>Suuret Filosofien Sitaatit</title>
-        <!--Тут можно создать стили для всех одинаковых элементов
-        <style>
-            body {background-color:rgb(230, 176, 213);}
-        </style>-->
+<head>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|Poppins">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <title>Suuret Filosofien Sitaatit</title>
+    <!--Тут можно создать стили для всех одинаковых элементов
+    и он будет учтен для всех выбранных элементов в первую очередь
+    <style>
+        body {background-color:rgb(230, 176, 213);} /* Цвет фона */
+    </style>-->
+    <!--Или создать ссылку на CSS файл-->
+    <link rel="stylesheet" href="style.css">
+    <!--Можно создать уникальный стиль для всей страницы
+    однако он будет работать если будет прочитан ПОСЛЕ ссылки на файл CSS
+    <style>
+        body {
+            background-color: linen;
+        }
 
-        <!--Или создать ссылку на CSS файл-->
-        <link rel="stylesheet" href="style.css">
-    </head>
+        h1 {
+            color: maroon;
+            margin-left: 40px;
+        }
+    </style>-->
+</head>
 
-    <body>
+<body>
 
-        <!--Заголовки и фон текста-->
-        <h1>Tiedän, etten tiedä mitään. Sokrates</h1>
-        <h2 style="font-family:verdana;">Tunne itsesi. Sokrates</h2>
-        <h3 style="font-family:courier;">Viisaus alkaa ihmettelystä. Sokrates</h3>
-        <h4 style="background-color:rgba(6, 163, 58, 0.5);"><!--0.5 прозрачность 50%-->Totuus on yksinkertaisuudessa. Aristoteles</h4>
-        <h5 style="background-color:rgb(231, 12, 12);">Älä tee pahaa. Hippokrates</h5>
-        <h6>Onni on elämän tarkoitus ja päämäärä. Aristoteles</h6>
+    <!--Заголовки и фон текста-->
+    <h1 class="ex1">Tiedän, etten tiedä mitään. Sokrates</h1>
+    <i class="fas fa-cloud" style="font-size:24px;"></i>
+    <i class="fas fa-cloud" style="font-size:36px;"></i>
+    <i class="fas fa-cloud" style="font-size:48px;color:red;"></i>
+    <i class="fas fa-cloud" style="font-size:60px;color:lightblue;"></i>
+    <h2 class="ex2" style="font-family:verdana;">Tunne itsesi. Sokrates</h2>
+    <i class="glyphicon glyphicon-cloud"></i>
+    <i class="glyphicon glyphicon-remove"></i>
+    <i class="glyphicon glyphicon-user"></i>
+    <i class="glyphicon glyphicon-envelope"></i>
+    <i class="glyphicon glyphicon-thumbs-up"></i>
+    <h3 id="ex3" style="font-family:courier;">Viisaus alkaa ihmettelystä. Sokrates</h3>
+    <i class="material-icons">cloud</i>
+    <i class="material-icons">favorite</i>
+    <i class="material-icons">attachment</i>
+    <i class="material-icons">computer</i>
+    <i class="material-icons">traffic</i>
+    <h4 style="background-color:rgba(6, 163, 58, 0.5);"><!--0.5 прозрачность 50%-->Totuus on yksinkertaisuudessa. Aristoteles</h4>
+    <h5 style="background-color:rgb(231, 12, 12);">Älä tee pahaa. Hippokrates</h5>
+    <h6 class="ex4">Onni on elämän tarkoitus ja päämäärä. Aristoteles</h6>
 
-        <!--Параграфы (абзацы)-->
-        <p>Hyve on tietoa. Sokrates</p>
-        <p>Ihminen on kaikkien asioiden mitta. Protagoras</p>
+    <!--Параграфы (абзацы)-->
+    <p class="ex5">Hyve on tietoa. Sokrates</p>
+    <p class="ex6">Ihminen on kaikkien asioiden mitta. Protagoras</p>
 
-        <!--Ссылка-->
-        <a href="https://www.w3schools.com">Aika on liikkuva kuva ikuisuudesta. Platon</a>
+    <!--Ссылка-->
+    <a href="https://www.w3schools.com">Aika on liikkuva kuva ikuisuudesta. Platon</a>
 
-        <!--Картинка-->
-        <img src="images/roden.jpg" alt="roden" width="200" height="150">
+    <!--Картинка-->
+    <img class="a" src="images/roden.jpg" alt="roden" width="200" height="150">
 
-        <!--Параграф со стилем-->
-        <p style="color:#2f10dd;">Musiikki on maailmankaikkeuden sielu. Pythagoras</p>
+    <!--Параграф со стилем-->
+    <p class="ex7" style="color:#2f10dd;">Musiikki on maailmankaikkeuden sielu. Pythagoras</p>
 
-        <!--Всплывающая подсказка-->
-        <p title="Platon">Oikeudenmukaisuus on hyve.</p>
+    <!--Всплывающая подсказка-->
+    <p class="ex8" title="Platon">Oikeudenmukaisuus on hyve.</p>
 
-        <!--Еще больший заголовок-->
-        <h1 style="font-size:60px;">Liike on elämää. Aristoteles</h1>
+    <!--Еще больший заголовок-->
+    <h1 class="ex9" style="font-size:60px;">Liike on elämää. Aristoteles</h1>
 
-        <!--Тематические разрывы и цвет текста-->
-        <h1>Thales</h1>
-        <p style="color:rgb(161, 2, 153);">Tieto on voimaa.</p>
-        <hr>
-        <h2>Herakleitos</h2>
-        <p style="color:hsl(189, 79%, 50%);">Kaikki virtaa, kaikki muuttuu.</p>
-        <hr>
+    <!--Тематические разрывы и цвет текста-->
+    <h1>Thales</h1>
+    <p style="color:rgb(161, 2, 153);">Tieto on voimaa.</p>
+    <hr>
+    <h2>Herakleitos</h2>
+    <p style="color:hsl(189, 79%, 50%);">Kaikki virtaa, kaikki muuttuu.</p>
+    <hr>
 
-        <!--Перенос строки-->
-        <p>Mitä vähemmän sanoja,<br>sitä paremmin sanottu.<br>Cicero</p>
+    <!--Перенос строки-->
+    <p class="ex22">Mitä vähemmän sanoja,<br>sitä paremmin sanottu.<br>Cicero</p>
 
-        <!--Стихотворение в рамочке-->
-        <pre style="border:2px solid Tomato;">
+    <!--Стихотворение в рамочке-->
+    <pre class="ex20" style="border:2px solid Tomato;">
             Kaiken mitta on ihminen. Protagoras
           
             Olla on olla havaittavissa. Parmenides
@@ -62,75 +94,61 @@
             Rakasta totuutta, mutta anna anteeksi virhe. Voltaire
           </pre>
 
-        <!--Размер текста-->
-        <h1 style="font-size:300%;">Hiljaisuus on kultaa. Pythagoras</h1>
-        <p style="font-size:160%;">Työ voittaa kaiken. Hesiodos</p>
+    <!--Размер текста-->
+    <h1 class="ex16" style="font-size:300%;">Hiljaisuus on kultaa. Pythagoras</h1>
+    <p class="ex17" style="font-size:160%;">Työ voittaa kaiken. Hesiodos</p>
 
-        <!--Выравнивание текста-->
-        <h1 style="text-align:center;">Yhtenäisyys on voimaa. Herakleitos</h1>
-        <p style="text-align:center;">Kohtuullisuus on parasta kaikessa. Kleobulos</p>
+    <!--Выравнивание текста-->
+    <h1 class="ex18" style="text-align:center;">Yhtenäisyys on voimaa. Herakleitos</h1>
+    <p class="ex19" style="text-align:center;">Kohtuullisuus on parasta kaikessa. Kleobulos</p>
 
-        <!--Форматирование текста-->
-        <!--Жирный-->
-        <b>Vain hyve tekee ihmisen onnelliseksi.</b>
-        <strong>Seneca</strong>
+    <!--Форматирование текста-->
+    <!--Жирный-->
+    <b class="ex10">Vain hyve tekee ihmisen onnelliseksi.</b>
+    <strong>Seneca</strong><br>
 
-        <!--Курсив-->
-        <i>Meistä tulee sitä, mitä teemme.</i>
-        <em>Aristoteles</em>
+    <!--Курсив-->
+    <i class="ex11">Meistä tulee sitä, mitä teemme.</i>
+    <em>Aristoteles</em><br>
 
-        <!--Уменьшение шрифта-->
-        <small>Mielihyvä on onnellisen elämän alku ja loppu. Epikuros</small>
+    <!--Уменьшение шрифта-->
+    <small class="ex12">Mielihyvä on onnellisen elämän alku ja loppu. Epikuros</small>
 
-        <!--Выделенный текст-->
-        <p>Kaikki ihmiset pyrkivät <mark>luonnostaan</mark> tietoon. Aristoteles</p>
+    <!--Выделенный текст-->
+    <p class="ex13">Kaikki ihmiset pyrkivät <mark>luonnostaan</mark> tietoon. Aristoteles</p>
 
-        <!--Зачеркнутый и подчеркнутый текст-->
-        <p>Totuus <del>ei pelkää</del> <ins>tutkimista</ins>. Terentius</p>
+    <!--Зачеркнутый и подчеркнутый текст-->
+    <p class="ex14">Totuus <del>ei pelkää</del> <ins>tutkimista</ins>. Terentius</p>
 
-        <!--Смещение вниз и вверх-->
-        <p>Viisaus <sub>on</sub> tietää,</p>
-        <p>mitä <sup>ei</sup> tiedä. Kungfutse</p>
+    <!--Смещение вниз и вверх-->
+    <p class="ex15">Viisaus <sub>on</sub> tietää,</p>
+    <p class="ex15">mitä <sup>ei</sup> tiedä. Kungfutse</p>
 
-        <!--Цитаты-->
-        <p>Here is a quote from WWF's website:</p>
-        <blockquote cite="http://www.worldwildlife.org/who/index.html">
+    <!--Цитаты-->
+    <p class="ex21">Here is a quote from WWF's website:</p>
+    <blockquote cite="http://www.worldwildlife.org/who/index.html">
         For 60 years, WWF has worked to help people and nature thrive. As the world's leading conservation organization, WWF works in nearly 100 countries. At every level, we collaborate with people around the world to develop and deliver innovative solutions that protect communities, wildlife, and the places in which they live.
-        </blockquote>
+    </blockquote>
 
-        <p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p>
+    <p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p>
 
-        <!--Аббривеатура-->
-        <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+    <!--Аббривеатура-->
+    <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
 
-        <!--Адрес-->
-        <address>
-            Written by philosophers.<br>
-            Visit them at:<br>
-            Internet
-        </address>
+    <!--Адрес-->
+    <address>
+        Written by philosophers.<br>
+        Visit them at:<br>
+        Internet
+    </address>
 
-        <!--Название работы-->
-        <p><cite>Suuret Filosofien Sitaatit</cite> according information from Internet.</p>
+    <!--Название работы-->
+    <p><cite>Suuret Filosofien Sitaatit</cite> according information from Internet.</p>
 
-        <!--Текст справа налево-->
-        <bdo dir="rtl">Suuret Filosofien Sitaatit</bdo>
+    <!--Текст справа налево-->
+    <bdo dir="rtl">Suuret Filosofien Sitaatit</bdo><br>
 
-        <!---->
-    </body>
+    <!--Ссылки-->
+    <a href="https://petrova-olena.github.io/OHCOMP-css/" target="_blank">Linkki</a>
+</body>
 </html>
-
-
-
-<!--CSS tiedosto
-body {
-    /*Цвет фона*/
-    background-color: rgb(230, 176, 226);
-
-    /*Границы*/
-    border: 2px solid powderblue;
-
-    /*Отступы*/
-    padding: 10px;
-  }
--->
